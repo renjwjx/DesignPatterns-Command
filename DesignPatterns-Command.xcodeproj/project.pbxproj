@@ -12,6 +12,11 @@
 		EE2CFE2E209FC28500ADFC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2CFE2D209FC28500ADFC29 /* Assets.xcassets */; };
 		EE2CFE31209FC28500ADFC29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2CFE2F209FC28500ADFC29 /* Main.storyboard */; };
 		EE2CFE34209FC28500ADFC29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFE33209FC28500ADFC29 /* main.m */; };
+		EE2CFE3D209FC29500ADFC29 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFE3C209FC29500ADFC29 /* Command.m */; };
+		EE2CFE40209FC2AC00ADFC29 /* OpenCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFE3F209FC2AC00ADFC29 /* OpenCommand.m */; };
+		EE2CFE43209FC2E000ADFC29 /* PasteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFE42209FC2E000ADFC29 /* PasteCommand.m */; };
+		EE2CFE46209FC35F00ADFC29 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFE45209FC35F00ADFC29 /* Application.m */; };
+		EE2CFE49209FC52D00ADFC29 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2CFE48209FC52D00ADFC29 /* Document.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,16 @@
 		EE2CFE32209FC28500ADFC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE2CFE33209FC28500ADFC29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE2CFE35209FC28500ADFC29 /* DesignPatterns_Command.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DesignPatterns_Command.entitlements; sourceTree = "<group>"; };
+		EE2CFE3B209FC29500ADFC29 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		EE2CFE3C209FC29500ADFC29 /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		EE2CFE3E209FC2AC00ADFC29 /* OpenCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCommand.h; sourceTree = "<group>"; };
+		EE2CFE3F209FC2AC00ADFC29 /* OpenCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCommand.m; sourceTree = "<group>"; };
+		EE2CFE41209FC2E000ADFC29 /* PasteCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasteCommand.h; sourceTree = "<group>"; };
+		EE2CFE42209FC2E000ADFC29 /* PasteCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasteCommand.m; sourceTree = "<group>"; };
+		EE2CFE44209FC35F00ADFC29 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		EE2CFE45209FC35F00ADFC29 /* Application.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		EE2CFE47209FC52D00ADFC29 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		EE2CFE48209FC52D00ADFC29 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,16 @@
 		EE2CFE26209FC28500ADFC29 /* DesignPatterns-Command */ = {
 			isa = PBXGroup;
 			children = (
+				EE2CFE3B209FC29500ADFC29 /* Command.h */,
+				EE2CFE3C209FC29500ADFC29 /* Command.m */,
+				EE2CFE3E209FC2AC00ADFC29 /* OpenCommand.h */,
+				EE2CFE3F209FC2AC00ADFC29 /* OpenCommand.m */,
+				EE2CFE41209FC2E000ADFC29 /* PasteCommand.h */,
+				EE2CFE42209FC2E000ADFC29 /* PasteCommand.m */,
+				EE2CFE47209FC52D00ADFC29 /* Document.h */,
+				EE2CFE48209FC52D00ADFC29 /* Document.m */,
+				EE2CFE44209FC35F00ADFC29 /* Application.h */,
+				EE2CFE45209FC35F00ADFC29 /* Application.m */,
 				EE2CFE27209FC28500ADFC29 /* AppDelegate.h */,
 				EE2CFE28209FC28500ADFC29 /* AppDelegate.m */,
 				EE2CFE2A209FC28500ADFC29 /* ViewController.h */,
@@ -141,8 +166,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2CFE2C209FC28500ADFC29 /* ViewController.m in Sources */,
+				EE2CFE43209FC2E000ADFC29 /* PasteCommand.m in Sources */,
+				EE2CFE46209FC35F00ADFC29 /* Application.m in Sources */,
 				EE2CFE34209FC28500ADFC29 /* main.m in Sources */,
+				EE2CFE49209FC52D00ADFC29 /* Document.m in Sources */,
 				EE2CFE29209FC28500ADFC29 /* AppDelegate.m in Sources */,
+				EE2CFE3D209FC29500ADFC29 /* Command.m in Sources */,
+				EE2CFE40209FC2AC00ADFC29 /* OpenCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

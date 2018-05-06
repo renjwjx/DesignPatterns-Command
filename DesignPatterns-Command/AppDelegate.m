@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Application.h"
+#import "Document.h"
+#import "PasteCommand.h"
+#import "OpenCommand.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +19,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    Application* app = [[Application alloc] init];
+    OpenCommand* openC = [[OpenCommand alloc] initWithApplication:app];
+    //menu item excute the command
+    [openC execute];
+    
+    Document* doc = [[Document alloc] init];
+    PasteCommand* pasteC = [[PasteCommand alloc] initWithDocument:doc];
+    [pasteC execute];
+    
 }
 
 
